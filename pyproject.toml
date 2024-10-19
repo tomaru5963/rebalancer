@@ -3,6 +3,7 @@ name = "rebalancer"
 version = "0.1.0"
 description = ""
 authors = ["Ken Tomaru <gh@tomarun.net>"]
+license = "BSD-3-Clause"
 readme = "README.md"
 packages = [{include = "rebalancer", from = "src"}]
 
