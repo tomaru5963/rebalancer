@@ -1,0 +1,42 @@
+---
+time: 2024-09-30T10:20:30+09:00
+portfolio:
+  - asset_class: us_market_stocks
+    target: 0.45
+    instruments:
+      - instrument: vti
+        price: 283.20
+        units: 30
+  - asset_class: depeloped_markets_stocks
+    target: 0.35
+    instruments:
+      - instrument: vea
+        price: 53.98
+        units: 113
+  - asset_class: emerging_markets_stocks
+    target: 0.15
+    instruments:
+      - instrument: vwo
+        price: 48.10
+        units: 53
+---
+time: 2023-09-30T10:20:30+09:00
+portfolio:
+  - asset_class: us_market_stocks
+    target: 0.50
+    instruments:
+      - instrument: vti
+        price: 283.20
+        units: 33
+  - asset_class: depeloped_markets_stocks
+    target: 0.35
+    instruments:
+      - instrument: vea
+        price: 52.98
+        units: 102
+  - asset_class: emerging_markets_stocks
+    target: 0.15
+    instruments:
+      - instrument: vwo
+        price: 48.25
+        units: 49

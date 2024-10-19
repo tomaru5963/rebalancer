@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "required": [
+    "time",
+    "portfolio"
+  ],
+  "addtionalProperties": false,
+  "properties": {
+    "time": {
+      "type": "datetime-aware"
+    },
+    "portfolio": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_class",
+          "target",
+          "instruments"
+        ],
+        "addtionalProperties": false,
+        "properties": {
+          "asset_class": {
+            "type": "string"
+          },
+          "target": {
+            "type": "number"
+          },
+          "instruments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "instrument",
+                "price",
+                "units"
+              ],
+              "addtionalProperties": false,
+              "properties": {
+                "instrument": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "units": {
+                  "type": "integer"
+                },
+                "unincreasable": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

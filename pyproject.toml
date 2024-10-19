@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rebalancer"
+version = "0.1.0"
+description = ""
+authors = ["Ken Tomaru <gh@tomarun.net>"]
+readme = "README.md"
+packages = [{include = "rebalancer", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.2"
+jsonschema = "^4.23.0"
+pydantic = "^2.9.2"
+
+[tool.poetry.group.dev.dependencies]
+genson = "^1.3.0"
+rich = "^13.9.2"
+
+[tool.poetry.scripts]
+rebalancer = 'rebalancer.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
