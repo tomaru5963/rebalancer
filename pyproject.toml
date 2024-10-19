@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rebalancer"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Ken Tomaru <gh@tomarun.net>"]
 license = "BSD-3-Clause"
